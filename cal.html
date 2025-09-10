@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="cal.css" />
+    <title> Simple Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">0</div>
+        <button class="calc"
+            onclick="displaytext = ' '; document.querySelector('.display').innerHTML = displaytext;  ">C</button>
+        <button class="calc"
+            onclick=" displaytext += '1' ; document.querySelector('.display').innerHTML= displaytext; ">1</button>
+        <button class="calc"
+            onclick=" displaytext += '2'; document.querySelector('.display').innerHTML= displaytext; ">2</button>
+        <button class="calc"
+            onclick="displaytext += '+' ; document.querySelector('.display').innerHTML=displaytext;">+</button>
+        <button class="calc"
+            onclick="displaytext += '3' ; document.querySelector('.display').innerHTML=displaytext;">3</button>
+        <button class="calc"
+            onclick="displaytext += '4' ; document.querySelector('.display').innerHTML=displaytext;">4</button>
+        <button class="calc"
+            onclick="displaytext += '-' ; document.querySelector('.display').innerHTML=displaytext;">-</button>
+        <button class="calc"
+            onclick="displaytext += '5' ; document.querySelector('.display').innerHTML=displaytext;">5</button>
+        <button class="calc"
+            onclick="displaytext += '6' ; document.querySelector('.display').innerHTML=displaytext;">6</button>
+        <button class="calc"
+            onclick="displaytext += '*' ; document.querySelector('.display').innerHTML=displaytext;">*</button>
+        <button class="calc"
+            onclick="displaytext += '7' ; document.querySelector('.display').innerHTML=displaytext;">7</button>
+        <button class="calc"
+            onclick="displaytext += '8' ; document.querySelector('.display').innerHTML=displaytext;">8</button>
+        <button class="calc"
+            onclick="displaytext += '/' ; document.querySelector('.display').innerHTML=displaytext;">/</button>
+        <button class="calc" onclick="  displaytext = eval(displaytext);  document.querySelector('.display').innerHTML=displaytext; ">=</button>
+        <button class="calc"
+            onclick="displaytext += '9' ; document.querySelector('.display').innerHTML=displaytext;">9</button>
+        <button class="calc"
+            onclick="displaytext += '0' ; document.querySelector('.display').innerHTML=displaytext;">0</button>
+        <button class="calc"
+            onclick="displaytext += '.' ; document.querySelector('.display').innerHTML=displaytext;">.</button>
+    </div>
+    <script>
+        let displaytext = '';
+        document.querySelector('.display').innerHTML = displaytext;
+
+    </script>
+</body>
+
+</html>
